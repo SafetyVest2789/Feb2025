@@ -1,1 +1,2 @@
 # Feb2025
+Ollama "no remote code" local host only "zero drama" AI RAG. Using llama3.2 and upgrading to a chonky boi llama3.3 in March 2025. Project will consist of turning PDF into JSON format and querying with a locally hosted RAG LLM model.
