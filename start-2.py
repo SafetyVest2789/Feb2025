@@ -20,12 +20,12 @@ res = ollama.chat(
     messages=[
         {
             "role": "user",
-            "content": "What common syntax problems are there in an API?",
+            "content": "What common syntax problems are found in an API?",
         },
     ],
     stream=True,
 )
-for chunk in res:
+# for chunk in res:
 #    print(chunk["message"]["content"], end="", flush=True)
 
 
@@ -34,7 +34,7 @@ for chunk in res:
 
 
 res = ollama.generate(
-    model="llama3.2"
+    model="llama3.2",
     prompt="what is JSON notation?",
 )
 
@@ -46,7 +46,7 @@ res = ollama.generate(
 # Create new model with modelfile
 modelfile = """
 FROM llama3.2
-SYSTEM You are a very smart coding assistant who knows everythin about APIs
+SYSTEM You are a very smart API coding assistant. You are very succint and informative.
 PARAMETER temperature 0.1
 """
 
